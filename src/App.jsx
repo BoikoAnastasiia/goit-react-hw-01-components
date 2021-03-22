@@ -1,4 +1,4 @@
-import user from './otherSources/user.json'
+import user from './components/otherSources/user.json'
 import Profile from './components/Profile'
 
 const App = () => {
