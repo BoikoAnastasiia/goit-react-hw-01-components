@@ -1,5 +1,7 @@
 
-const ProfileName = ({ name, tag, location, avatar,  followers, views, likes  }) => (
+import propTypes from "prop-types";
+
+const ProfileName = ({ name, tag, location, avatar, followers, views, likes }) => (
     <div class="profile">
   <div class="description">
     <img
@@ -29,12 +31,33 @@ const ProfileName = ({ name, tag, location, avatar,  followers, views, likes  })
 </div>
 )
 
+ProfileName.defaultProps = {
+  avatar: "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg",
+};
+
+ProfileName.propTypes = {
+    name: propTypes.string.isRequired,
+        tag: propTypes.string.isRequired,
+  location: propTypes.string.isRequired,
+  avatar: propTypes.string,
+  followers: propTypes.number.isRequired,
+    views: propTypes.number.isRequired,
+   likes: propTypes.number.isRequired,
+};
+
+
+
 const Profile = ({ user }) => (<ProfileName
     name={user.name}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
+    tag={user.tag}
+    location={user.location}
+    avatar={user.avatar}
+    stats={user.stats}
+    followers={user.stats.followers}
+    views={user.views.followers}
+
+        likes={user.likes.followers}
+
 />)
 
 export default Profile
