@@ -5,12 +5,15 @@ import Profile from './components/Profile/Profile';
 import Container from './components/Container/Container';
 import Statistic from './components/statistic/Statistic';
 import data from './components/statistic/data.json';
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friendList.json';
 
 const App = () => {
   return (
     <Container>
       <Profile user={user} />
       <Statistic title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
     </Container>
   );
 };
