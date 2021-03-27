@@ -6,7 +6,7 @@ import Container from './components/Container/Container';
 import Statistic from './components/statistic/Statistic';
 import data from './components/statistic/data.json';
 import FriendList from './components/FriendList/FriendList';
-import friends from './components/FriendList/friendList.json';
+import friends from './components/FriendList/friends.json';
 
 const App = () => {
   return (
