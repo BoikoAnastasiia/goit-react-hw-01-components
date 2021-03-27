@@ -3,13 +3,12 @@ import propTypes from "prop-types";
 import styles from "./Profile.module.css"
 
 const ProfileName = ({ name, tag, location, avatar, followers, views, likes }) => (
-    <div class="profile">
+    <div class={styles.container}>
   <div class="description">
     <img
       src={avatar}
       alt="Аватар пользователя"
-      class="avatar"
-    />
+      class={styles.avatar }   />
     <p class="name">{name}</p>
     <p class="tag">@{tag}</p>
     <p class="location">{location}</p>
