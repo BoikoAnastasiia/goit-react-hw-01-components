@@ -9,23 +9,23 @@ const ProfileName = ({ name, tag, location, avatar, followers, views, likes }) =
       src={avatar}
       alt="Аватар пользователя"
       class={styles.avatar }   />
-    <p class="name">{name}</p>
+    <p class={styles.name}>{name}</p>
     <p class="tag">@{tag}</p>
     <p class="location">{location}</p>
   </div>
 
-  <ul class="stats">
+  <ul class={styles.stats}>
     <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{followers}</span>
+      <span class={styles.label}>Followers</span>
+      <span class={styles.quantity}>{followers}</span>
     </li>
     <li>
-      <span class="label">Views</span>
-      <span class="quantity">{views}</span>
+      <span class={styles.label}>Views</span>
+      <span class={styles.quantity}>{views}</span>
     </li>
     <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{likes}</span>
+      <span class={styles.label}>Likes</span>
+      <span class={styles.quantity}>{likes}</span>
     </li>
   </ul>
 </div>
