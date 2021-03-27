@@ -11,3 +11,9 @@
     width: 120px;
     border-radius: 50%;
 }
+
+.description {
+    margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
