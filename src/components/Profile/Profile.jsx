@@ -1,5 +1,6 @@
-
 import propTypes from "prop-types";
+
+import styles from "./Profile.module.css"
 
 const ProfileName = ({ name, tag, location, avatar, followers, views, likes }) => (
     <div class="profile">
@@ -37,7 +38,7 @@ ProfileName.defaultProps = {
 
 ProfileName.propTypes = {
     name: propTypes.string.isRequired,
-        tag: propTypes.string.isRequired,
+tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
   avatar: propTypes.string,
   followers: propTypes.number.isRequired,
@@ -54,10 +55,14 @@ const Profile = ({ user }) => (<ProfileName
     avatar={user.avatar}
     stats={user.stats}
     followers={user.stats.followers}
-    views={user.views.followers}
+    views={user.stats.followers}
 
-        likes={user.likes.followers}
+        likes={user.stats.followers}
 
 />)
+
+Profile.defaultProps = {
+    user: propTypes.arrayOf(propTypes.shape).isRequired,
+}
 
 export default Profile
