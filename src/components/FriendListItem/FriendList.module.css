@@ -1,0 +1,16 @@
+.status {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(252, 0, 0);
+}
+
+.isOnline {
+  composes: status;
+  background-color: rgb(102, 182, 21);
+}
+
+.avatar {
+  border-radius: 4px;
+  background-color: gold;
+}

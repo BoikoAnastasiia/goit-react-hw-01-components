@@ -14,16 +14,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-ul {
-  display: flex;
-  margin-top: 15px;
-}
-
-li {
-  padding-top: 20px;
-}
-
 .statList {
+  margin-top: 15px;
+  display: flex;
   margin-top: 15px;
 }
 
@@ -58,4 +51,8 @@ span {
 
 .percentage {
   padding-bottom: 15px;
+}
+
+.item {
+  padding-top: 20px;
 }
