@@ -12,6 +12,8 @@
   width: 120px;
   border-radius: 50%;
   padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .description {
@@ -52,9 +54,4 @@ li {
 .name {
   font-weight: 600;
   font-size: 27px;
-}
-
-img {
-  margin-left: auto;
-  margin-right: auto;
 }
