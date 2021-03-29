@@ -3,4 +3,54 @@
   margin-left: auto;
   margin-right: auto;
   width: 300px;
+  margin-top: 20px;
+}
+
+.header {
+  padding-top: 10px;
+}
+
+.miniheader {
+  background-color: rgb(238, 232, 224);
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.table {
+  padding: 10px;
+  width: 100%;
+}
+
+.tbody {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.type {
+  padding: 5px;
+  font-weight: 500;
+}
+
+.amount {
+  font-size: 12px;
+  padding: 5px;
+}
+
+tr {
+  padding: 5px;
+}
+
+.currency {
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
 }
