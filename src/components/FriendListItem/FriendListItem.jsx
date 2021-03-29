@@ -5,15 +5,15 @@ import defaultPic from '../FriendList/default.svg';
 
 const FriendListItem = ({ isOnline, avatar, name }) => (
   <>
-    <span class={isOnline ? styles.isOnline : styles.isOffline}></span>
-    <img class={styles.avatar} src={avatar} alt={name} width="48" />
-    <p class="name">{name}</p>
+    <span className={isOnline ? styles.isOnline : styles.isOffline}></span>
+    <img className={styles.avatar} src={avatar} alt={name} width="48" />
+    <p className="name">{name}</p>
   </>
 );
 // ptsr
 
 FriendListItem.propTypes = {
-  isOnline: PropTypes.oneOf(['isOffline', 'isOnline']),
+  isOnline: PropTypes.bool,
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
 };
